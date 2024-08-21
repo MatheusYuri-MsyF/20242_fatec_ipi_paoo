@@ -40,3 +40,23 @@ const ehPar = n => n % 2 === 0 //true or false
 const triplo = function (n = 5){
     return 3 * n
 }
+
+//closures 
+//Função de alta ordem
+
+function f (funcao){
+    console.log('f')
+    funcao()()()
+    return () => console.log('i')
+}
+
+function g(){
+    console.log('g')
+    return function(){
+        console.log('Fui criado por g')
+        return  () => {console.log ('h'); return () => 'k'}
+    }
+}
+
+
+f(g())()
