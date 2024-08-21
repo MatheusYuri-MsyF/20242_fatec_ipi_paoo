@@ -8,6 +8,8 @@ console.log(nome)
 // for(let i=0; i < v1.length; i++)
 //     console.log(v1[i])
 
+//Dado esse vetor, construa outro. Ele deve conter apenas os nomes que começam com a letra A.
+// const nomes = ['Ana', 'João', 'Rodrigo', 'Angelica']
 const nomes = ['Ana', 'Joao', 'Rodrigo', 'Angelica']
 const result = nomes.filter((n) => {return n[0] === 'A'})
 const resultado = []
@@ -18,15 +20,21 @@ for (let i = 0; i<nomes.length ; i++){
 console.log(resultado)
 console.log(result)
 
+// Deve conter só a primeira letra de cada palavra
 const nomes2 = ['Ana', 'Joao', 'Rodrigo', 'Angelica']
 const resultado2 = []
 for (let i = 0; i<nomes.length ; i++){ 
     resultado2.push(nomes[i][0])
 }
+
+//ou
+
+const nomes3 = ['Ana', 'Joao', 'Rodrigo', 'Angelica']
+const listaResultante = nomes3.map(nome => nomes[0])
+
 console.log(resultado2)
 
-//Dado esse vetor, construa outro. Ele deve conter apenas os nomes que começam com a letra A.
-// const nomes = ['Ana', 'João', 'Rodrigo', 'Angelica']
+
 // const resultado = nomes.filter((n) => {return n[0] === 'A'})
 // console.log(resultado)
 // SELECT * FROM tb_pessoa WHERE idade >= 18
